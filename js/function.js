@@ -75,7 +75,7 @@ function clickfunc(event) {
         )
           .toFixed(7)
           .replace(/\.?0+$/, "")
-          .toString(); /////////////////////////////// بگو to fixed is making zero
+          .toString(); 
         deleteNumber = true;
       }
 
@@ -107,8 +107,8 @@ function clickfunc(event) {
     }
   } else if (event.target.classList.contains("button-x2")) {
     const powerOfTwo = parseFloat(display.innerHTML);
-    const floatNumber = Math.pow(powerOfTwo, 2); //////////////////////////////////
-    display.innerHTML = floatNumber.toString(); //////////////////////////////////
+    const floatNumber = Math.pow(powerOfTwo, 2); 
+    display.innerHTML = floatNumber.toString();
     resultTop.innerHTML = `sqr(${powerOfTwo.toString()})`;
   } else if (event.target.classList.contains("button-x3")) {
     const powerOfTree = parseFloat(display.innerHTML);
@@ -117,7 +117,7 @@ function clickfunc(event) {
     resultTop.innerHTML = `cube(${powerOfTree.toString()})`;
   } else if (event.target.classList.contains("radical")) {
     const radicalValue = parseFloat(display.innerHTML);
-    const radical = Math.sqrt(radicalValue).toString(); /////////////////////////
+    const radical = Math.sqrt(radicalValue).toString(); 
     display.innerHTML = radical.toString();
     resultTop.innerHTML = `√(${radicalValue})`;
   } else if (event.target.classList.contains("button-1x")) {
@@ -155,7 +155,7 @@ function clickfunc(event) {
       )
         .toFixed(7)
         .replace(/\.?0+$/, "")
-        .toString(); /////////////////////////////// to fixed is making zero
+        .toString(); 
       deleteNumber = true;
       historyboxFunc(numberOne, secondNumber, opratorOne, display.innerHTML);
     } else if (!opratorOne && numberOne) {
@@ -171,7 +171,7 @@ function clickfunc(event) {
       )
         .toFixed(7)
         .replace(/\.?0+$/, "")
-        .toString(); /////////////////////////////// بگو to fixed is making zero
+        .toString(); 
       deleteNumber = true;
       historyboxFunc(numberOne, numberOne, opratorOne, display.innerHTML);
     }
