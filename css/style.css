@@ -248,6 +248,7 @@ html {
   margin-right: 4px;
   font-size: 40px;
   font-family: number-font;
+  margin-right: 20px;
 }
 
 .MC-MR { 
@@ -394,6 +395,7 @@ html {
 }
 
 .result-top {
+  margin-right: 20px;
   display: flex;
   justify-content: flex-end;
 }
